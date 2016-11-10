@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8B765411CFC994A00786BA8 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B765401CFC994A00786BA8 /* CalculatorBrain.swift */; };
 		E8FE66B01CFC4DB800A69A90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE66AF1CFC4DB800A69A90 /* AppDelegate.swift */; };
 		E8FE66B21CFC4DB800A69A90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FE66B11CFC4DB800A69A90 /* ViewController.swift */; };
 		E8FE66B51CFC4DB800A69A90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FE66B31CFC4DB800A69A90 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8B765401CFC994A00786BA8 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		E8FE66AC1CFC4DB800A69A90 /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FE66AF1CFC4DB800A69A90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8FE66B11CFC4DB800A69A90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +56,23 @@
 		E8FE66AE1CFC4DB800A69A90 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				E8FE66AF1CFC4DB800A69A90 /* AppDelegate.swift */,
 				E8FE66B11CFC4DB800A69A90 /* ViewController.swift */,
+				E8B765401CFC994A00786BA8 /* CalculatorBrain.swift */,
 				E8FE66B31CFC4DB800A69A90 /* Main.storyboard */,
+				E8FE66C11CFC4F2700A69A90 /* Supporting Files */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		E8FE66C11CFC4F2700A69A90 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8FE66AF1CFC4DB800A69A90 /* AppDelegate.swift */,
 				E8FE66B61CFC4DB800A69A90 /* Assets.xcassets */,
 				E8FE66B81CFC4DB800A69A90 /* LaunchScreen.storyboard */,
 				E8FE66BB1CFC4DB800A69A90 /* Info.plist */,
 			);
-			path = Calculator;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,11 +102,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = CrisRodFe;
 				TargetAttributes = {
 					E8FE66AB1CFC4DB800A69A90 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 83EY63ELY9;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -135,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B765411CFC994A00786BA8 /* CalculatorBrain.swift in Sources */,
 				E8FE66B21CFC4DB800A69A90 /* ViewController.swift in Sources */,
 				E8FE66B01CFC4DB800A69A90 /* AppDelegate.swift in Sources */,
 			);
@@ -176,8 +190,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -199,7 +215,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -222,8 +238,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -239,9 +257,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -251,10 +270,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrisRodFe.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -262,10 +284,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Calculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrisRodFe.Calculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -288,6 +313,7 @@
 				E8FE66C01CFC4DB800A69A90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
